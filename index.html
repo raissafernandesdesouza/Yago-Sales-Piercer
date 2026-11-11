@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f5ef">
+  <meta name="description" content="Piercing com cuidado, biossegurança e personalidade em Lavras, MG. Conheça o estúdio Yago Sales Piercer e agende seu atendimento.">
+  <title>Yago Sales Piercer | Piercing em Lavras, MG</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: light;
+      --paper: #f3f5ef;
+      --ink: #17231e;
+      --muted: #65716b;
+      --line: #d7ded7;
+      --green: #c8ef77;
+      --coral: #ed745e;
+      --white: #fff;
+      --display: "Space Grotesk", sans-serif;
+      --body: "DM Sans", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: var(--body);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    a { color: inherit; }
+    img { display: block; max-width: 100%; }
+    .wrap { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { width: 22px; height: 2px; background: var(--coral); content: ""; }
+
+    .topbar { border-bottom: 1px solid var(--line); }
+    .nav {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .brand { display: inline-flex; align-items: center; gap: 11px; text-decoration: none; }
+    .brand-mark {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--ink);
+      color: var(--green);
+      font-family: var(--display);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .brand-name { font-family: var(--display); font-size: 14px; font-weight: 700; line-height: 1.15; }
+    .brand-name span { display: block; color: var(--muted); font-family: var(--body); font-size: 10px; font-weight: 500; }
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a { color: #48554e; font-size: 13px; text-decoration: none; }
+    .nav-links a:hover { color: var(--ink); }
+    .button {
+      min-height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 0 19px;
+      border: 0;
+      border-radius: 2px;
+      background: var(--ink);
+      color: var(--white);
+      font-family: var(--body);
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background .2s ease, transform .2s ease;
+    }
+    .button:hover { transform: translateY(-2px); background: #2b3b33; }
+    .button svg { width: 16px; height: 16px; }
+
+    .hero { padding: 54px 0 76px; }
+    .hero-grid { display: grid; grid-template-columns: .92fr 1.08fr; align-items: center; gap: 64px; }
+    .hero-copy { padding: 18px 0; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: var(--display); }
+    h1 { max-width: 540px; margin-bottom: 20px; font-size: clamp(48px, 6vw, 76px); line-height: .98; letter-spacing: 0; }
+    h1 span { color: #5e8a32; }
+    .hero-lede { max-width: 440px; margin-bottom: 28px; color: #536159; font-size: 16px; }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; }
+    .text-link { display: inline-flex; align-items: center; gap: 7px; color: var(--ink); font-size: 13px; font-weight: 700; text-decoration: none; }
+    .text-link svg { width: 15px; height: 15px; }
+    .hero-meta { display: flex; align-items: center; gap: 15px; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); }
+    .rating-stars { color: #e78347; font-size: 15px; letter-spacing: 1px; }
+    .rating-copy { color: var(--muted); font-size: 12px; }
+    .rating-copy strong { color: var(--ink); font-size: 14px; }
+    .hero-visual { position: relative; min-width: 0; }
+    .hero-photo { width: 100%; height: 435px; object-fit: cover; background: #d8ded8; }
+    .photo-tag {
+      position: absolute;
+      right: -14px;
+      bottom: 24px;
+      max-width: 220px;
+      padding: 14px 18px;
+      background: var(--green);
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+    .photo-tag span { display: block; color: #4a5d37; font-size: 10px; font-weight: 500; }
+
+    .trust-band { background: var(--ink); color: var(--paper); }
+    .trust-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+    .trust-item { display: flex; align-items: center; gap: 15px; min-height: 108px; padding: 20px 28px; border-right: 1px solid #39463f; }
+    .trust-item:first-child { padding-left: 0; }
+    .trust-item:last-child { border-right: 0; }
+    .trust-icon { display: grid; width: 38px; height: 38px; flex: 0 0 38px; place-items: center; border: 1px solid #58655d; border-radius: 50%; color: var(--green); }
+    .trust-icon svg { width: 18px; height: 18px; }
+    .trust-item strong { display: block; font-family: var(--display); font-size: 14px; }
+    .trust-item span { display: block; margin-top: 2px; color: #b7c0ba; font-size: 11px; }
+
+    .section { padding: 92px 0; }
+    .section-heading { max-width: 570px; margin-bottom: 38px; }
+    .section-heading h2 { margin-bottom: 12px; font-size: clamp(34px, 4vw, 48px); line-height: 1.05; }
+    .section-heading p { max-width: 470px; margin-bottom: 0; color: var(--muted); }
+    .experience-grid { display: grid; grid-template-columns: 1.12fr .88fr; gap: 64px; align-items: center; }
+    .experience-image { width: 100%; height: 400px; object-fit: cover; background: #d8ded8; }
+    .experience-copy h2 { max-width: 430px; margin-bottom: 15px; font-size: 42px; line-height: 1.06; }
+    .experience-copy > p:not(.eyebrow) { color: var(--muted); }
+    .care-list { display: grid; gap: 0; margin: 27px 0 30px; padding: 0; list-style: none; }
+    .care-list li { display: flex; align-items: center; gap: 11px; padding: 12px 0; border-top: 1px solid var(--line); font-size: 13px; font-weight: 600; }
+    .check { display: grid; width: 22px; height: 22px; place-items: center; border-radius: 50%; background: var(--green); color: var(--ink); font-size: 12px; }
+
+    .reviews { background: #e6ece5; }
+    .review-top { display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 36px; }
+    .review-top .section-heading { margin-bottom: 0; }
+    .review-score { display: flex; align-items: center; gap: 12px; padding-bottom: 5px; }
+    .review-score strong { font-family: var(--display); font-size: 34px; }
+    .review-score small { display: block; color: var(--muted); font-size: 11px; }
+    .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .review { min-height: 220px; display: flex; flex-direction: column; padding: 25px; background: var(--paper); }
+    .review .rating-stars { margin-bottom: 17px; }
+    .review blockquote { flex: 1; margin: 0 0 22px; font-family: var(--display); font-size: 17px; line-height: 1.4; }
+    .review cite { color: var(--muted); font-size: 12px; font-style: normal; }
+
+    .contact { padding: 86px 0; }
+    .contact-panel { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 30px; padding: 42px 46px; background: var(--green); }
+    .contact-panel .eyebrow { color: #526242; }
+    .contact-panel h2 { max-width: 600px; margin-bottom: 10px; font-size: clamp(32px, 4vw, 46px); line-height: 1.05; }
+    .contact-panel p:not(.eyebrow) { margin: 0; color: #4c5c40; font-size: 14px; }
+    .contact-panel .button { white-space: nowrap; }
+
+    .footer { padding: 34px 0; border-top: 1px solid var(--line); }
+    .footer-grid { display: flex; justify-content: space-between; align-items: center; gap: 25px; }
+    .footer-address { color: var(--muted); font-size: 12px; }
+    .footer-links { display: flex; align-items: center; gap: 22px; }
+    .footer-links a { color: var(--ink); font-size: 12px; font-weight: 600; text-decoration: none; }
+
+    @media (max-width: 800px) {
+      .wrap { width: min(100% - 36px, 600px); }
+      .nav { min-height: 68px; }
+      .nav-links { display: none; }
+      .nav > .button { min-height: 41px; padding-inline: 13px; font-size: 12px; }
+      .hero { padding: 35px 0 48px; }
+      .hero-grid, .experience-grid { grid-template-columns: 1fr; gap: 32px; }
+      .hero-copy { padding: 0; }
+      h1 { max-width: 500px; font-size: clamp(50px, 12vw, 70px); }
+      .hero-lede { font-size: 15px; }
+      .hero-meta { margin-top: 28px; }
+      .hero-photo { height: min(66vw, 390px); min-height: 245px; }
+      .photo-tag { right: -7px; bottom: 15px; }
+      .trust-grid { grid-template-columns: 1fr; padding-block: 8px; }
+      .trust-item, .trust-item:first-child { min-height: 76px; padding: 12px 0; border-right: 0; border-bottom: 1px solid #39463f; }
+      .trust-item:last-child { border-bottom: 0; }
+      .section { padding: 66px 0; }
+      .experience-grid { gap: 28px; }
+      .experience-image { height: min(78vw, 370px); }
+      .experience-copy h2 { font-size: 36px; }
+      .review-top { align-items: start; flex-direction: column; }
+      .review-grid { grid-template-columns: 1fr; gap: 10px; }
+      .review { min-height: 0; padding: 22px; }
+      .review blockquote { margin-bottom: 18px; }
+      .contact { padding: 58px 0; }
+      .contact-panel { grid-template-columns: 1fr; padding: 30px 24px; }
+      .contact-panel .button { justify-self: start; }
+      .footer-grid { align-items: flex-start; flex-direction: column; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav wrap" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Yago Sales Piercer, início">
+        <span class="brand-mark">YS</span>
+        <span class="brand-name">YAGO SALES<span>PIERCER · LAVRAS, MG</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#estudio">O estúdio</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#localizacao">Localização</a>
+      </div>
+      <a class="button" href="https://wa.me/5535998950801" target="_blank" rel="noreferrer">
+        Agendar horário
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-grid wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Piercing com cuidado, em Lavras</p>
+          <h1>Yago Sales <span>Piercer</span></h1>
+          <p class="hero-lede">Seu estilo, suas escolhas. Um atendimento atencioso, joias de qualidade e cuidado em cada etapa.</p>
+          <div class="hero-actions">
+            <a class="button" href="https://wa.me/5535998950801" target="_blank" rel="noreferrer">
+              Fale com o estúdio
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="text-link" href="#estudio">Conheça o espaço <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Nota 5 de 5, com 93 avaliações">
+            <span class="rating-stars" aria-hidden="true">★★★★★</span>
+            <span class="rating-copy"><strong>5,0</strong> no Google · 93 avaliações</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img class="hero-photo" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SsDAIRccvKZRfSKng204Bl3rnSmD5F0VD9z-7qNDQfpe-soLVaGATdRirDbHu73HFec5K-v_7MlXbnItUMSIm0o5xTSP2dJPnaOvNnznGO_FHok1fa1HOFHmQMG_CoOMo06ZRS=w1000-h700-k-no" alt="Perfuração na orelha com uma argola dourada" fetchpriority="high">
+          <div class="photo-tag">Um espaço acolhedor<span>Centro · Lavras, Minas Gerais</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-band" aria-label="Diferenciais do estúdio">
+      <div class="trust-grid wrap">
+        <div class="trust-item">
+          <span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3 19 6v5c0 4.5-2.8 8-7 10-4.2-2-7-5.5-7-10V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <div><strong>Biossegurança em primeiro lugar</strong><span>Ambiente higienizado e itens descartáveis</span></div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 11.5c0 4.2-3.6 7.5-8 7.5-1.1 0-2.2-.2-3.1-.6L4 20l1.5-4A7.1 7.1 0 0 1 4 11.5C4 7.4 7.6 4 12 4s8 3.4 8 7.5Z"/><path d="M8 12h8M12 8v8"/></svg></span>
+          <div><strong>Atendimento sem pressa</strong><span>Orientação atenciosa para cada escolha</span></div>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z"/><path d="M9 12h6"/></svg></span>
+          <div><strong>Um espaço para todo mundo</strong><span>Acolhimento e respeito à diversidade</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="estudio">
+      <div class="experience-grid wrap">
+        <img class="experience-image" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SkLtolrJqC9kO188nuckY0L8pKJj3gGG7vcLPNvg_r7-M-ieMqZQL08XopD5lZ0922hODsc6V_5D85hEvT6J_Gty6gFz2cXzwT0fKM0ClhLaVoBJUlJ86PNvjrDNmJnQW7KOhl6N-NI_s=w900-h900-k-no" alt="Imagem do estúdio Yago Sales Piercer" loading="lazy">
+        <div class="experience-copy">
+          <p class="eyebrow">Seu corpo, sua expressão</p>
+          <h2>Uma experiência feita para você se sentir bem.</h2>
+          <p>Da escolha da joia ao cuidado com a perfuração, cada conversa importa. Tire suas dúvidas e encontre o que combina com você.</p>
+          <ul class="care-list">
+            <li><span class="check" aria-hidden="true">✓</span> Joias selecionadas com cuidado</li>
+            <li><span class="check" aria-hidden="true">✓</span> Materiais descartáveis</li>
+            <li><span class="check" aria-hidden="true">✓</span> Orientação próxima e responsável</li>
+          </ul>
+          <a class="text-link" href="https://www.instagram.com/piercerlavras/" target="_blank" rel="noreferrer">
+            Acompanhe no Instagram
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="avaliacoes">
+      <div class="wrap">
+        <div class="review-top">
+          <div class="section-heading">
+            <p class="eyebrow">Quem já veio, recomenda</p>
+            <h2>Confiança que se constrói em cada atendimento.</h2>
+            <p>O estúdio tem nota máxima no Google, com 93 avaliações.</p>
+          </div>
+          <div class="review-score"><strong>5,0</strong><div><span class="rating-stars" aria-hidden="true">★★★★★</span><small>93 avaliações no Google</small></div></div>
+        </div>
+        <div class="review-grid">
+          <article class="review">
+            <div class="rating-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“O Yago é um ótimo profissional, me atendeu muito bem e resolveu um problema, além de me oferecer outras joias lindas.”</blockquote>
+            <cite>Luciana Santos · avaliação no Google</cite>
+          </article>
+          <article class="review">
+            <div class="rating-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Super atencioso, com ambiente higienizado e itens descartáveis. Biossegurança levada a sério!”</blockquote>
+            <cite>Rafaella de Oliveira · avaliação no Google</cite>
+          </article>
+          <article class="review">
+            <div class="rating-stars" aria-label="5 de 5 estrelas">★★★★★</div>
+            <blockquote>“Lugar limpo, organizado e ótimos produtos.”</blockquote>
+            <cite>Avaliação no Google</cite>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="localizacao">
+      <div class="contact-panel wrap">
+        <div>
+          <p class="eyebrow">Vamos conversar?</p>
+          <h2>Seu próximo piercing começa com uma boa conversa.</h2>
+          <p>Chame no WhatsApp para tirar dúvidas e combinar seu horário.</p>
+        </div>
+        <a class="button" href="https://wa.me/5535998950801" target="_blank" rel="noreferrer">
+          Agendar pelo WhatsApp
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid wrap">
+      <a class="brand" href="#inicio">
+        <span class="brand-mark">YS</span>
+        <span class="brand-name">YAGO SALES<span>PIERCER · LAVRAS, MG</span></span>
+      </a>
+      <div class="footer-address">Tv. Álvaro Botelho · Centro, Lavras - MG</div>
+      <div class="footer-links">
+        <a href="tel:+5535998950801">(35) 99895-0801</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Tv.+%C3%81lvaro+Botelho%2C+Centro%2C+Lavras+-+MG" target="_blank" rel="noreferrer">Como chegar ↗</a>
+        <a href="https://www.instagram.com/piercerlavras/" target="_blank" rel="noreferrer">Instagram ↗</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
